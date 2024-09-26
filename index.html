@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calcu">
+            <div id="display" class="display">0</div>
+            <div class="buttons">
+               
+                <ul>
+                    <li id="graycol-1" onclick="clearDisplay()">
+                        AC
+                    </li>
+                    <li id="graycol-2"
+                       onclick="deleteLast()">
+                            <i class="ri-arrow-left-line"></i>
+                       
+                    </i>
+                    <li id="yellowcol" onclick="appendOperator('/')">
+                        <i class="ri-divide-fill"></i>
+                   </li>
+                    
+                </ul>
+                <ul>
+                    <li
+                       onclick="appendNumber('7')">
+                            <i class="ri-number-7"></i>
+                       
+                    </li>
+                    <li
+                       onclick="appendNumber('8')">
+                            <i class="ri-number-8"></i>
+                       
+                    </li>
+                    <li
+                         onclick="appendNumber('9')">
+                            <i class="ri-number-9"></i>
+                        
+                    </li>
+                    <li id="yellowcol"
+                       onclick="appendOperator('*')">
+                            <i class="ri-close-fill"></i>
+                        
+                    </li>
+                    
+                </ul>
+                <ul>
+                    <li
+                        onclick="appendNumber('4')">
+                            <i class="ri-number-4"></i>
+                        
+                    </li>
+                    <li
+                        onclick="appendNumber('5')">
+                            <i class="ri-number-5"></i>
+                        
+                    </li>
+                    <li
+                         onclick="appendNumber('6')">
+                            <i class="ri-number-6"></i>
+                       
+                    </li>
+                    <li id="yellowcol"
+                        onclick="appendOperator('-')">
+                            <i class="ri-subtract-line"></i>
+                        
+                    </li>
+                   
+                </ul>
+                <ul>
+                     <li
+                         onclick="appendNumber('1')">
+                            <i class="ri-number-1"></i>
+                        
+                    </li>
+                    <li
+                        onclick="appendNumber('2')">
+                            <i class="ri-number-2"></i>
+                        
+                    </li>
+                    <li
+                        onclick="appendNumber('3')">
+                            <i class="ri-number-3"></i>
+                        
+                    </li>
+               
+                    <li id="yellowcol"
+                         onclick="appendOperator('+')">
+                            <i class="ri-add-line"></i>
+                        
+                    </li>
+                </ul>
+                <ul>
+                    <li onclick="appendNumber('0')">
+                            <i class="ri-number-0"></i>
+                       
+                    </li>
+                    
+                    <li
+                         onclick="appendNumber('.')">.
+                    </li>
+                    <li id="yellowcol-2"
+                         class="equals" onclick="calculate()">
+                            <i class="ri-equal-line"></i>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="custom.js" defer></script>
+</body>
+</html>
